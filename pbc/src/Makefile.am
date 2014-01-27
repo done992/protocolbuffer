@@ -6,11 +6,15 @@ lib_LTLIBRARIES = libprotoc-eg.la
 
 generate_headers = \
 	generated-sources/amessage.pb-c.h \
-	generated-sources/repeated_msg.pb-c.h
+	generated-sources/repeated_msg.pb-c.h \
+	generated-sources/sub_msg.pb-c.h \
+	generated-sources/sub_repeated_msg.pb-c.h
 	
 generate_sources = \
 	generated-sources/amessage.pb-c.c \
-	generated-sources/repeated_msg.pb-c.c 
+	generated-sources/repeated_msg.pb-c.c \
+	generated-sources/sub_msg.pb-c.c \
+	generated-sources/sub_repeated_msg.pb-c.c
 
 util_headers = \
 	util/argv.h \

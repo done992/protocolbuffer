@@ -47,4 +47,6 @@ typedef enum {false, true} bool;
 #define RT_SUCCESS 	0
 #define RT_FAILURE 	-1
 
+#define SIZE 8192
+
 #endif /* DYNALLOC_CONSTANTS_H_ */

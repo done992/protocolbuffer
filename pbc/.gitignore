@@ -18,6 +18,8 @@ missing
 .libs/
 *.la
 *.o
+*.lo
 stamp-h1
 .deps/
 *_run
+.dirstamp

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "src/generated-sources/repeated_msg.pb-c.h"
+#include "src/generated-sources/sub_repeated_msg.pb-c.h"
 #include "src/util/xmalloc.h"
 
 #define FILE_NAME "/tmp/pb.tmp"
@@ -13,22 +13,25 @@
  */
 void pack_to_file(int argc, int argv[])
 {
-	RepeatedMsgProto msg = REPEATED_MSG_PROTO__INIT;
+	CompMsg msg = COMP_MSG__INIT;
 	void *buf;
 	unsigned len;
 	FILE *fp = NULL;
 	int i;
 
-	msg.n_c = argc;
-	msg.c = xmalloc(sizeof(int) * msg.n_c); // Allocate memory to store int32
+	msg.n_a = argc;
+	msg.a =  xmalloc(sizeof(EleMsg *) * msg.n_a);
 	for (i = 0; i < argc; i++) {
-		msg.c[i] = argv[i];
+		msg.a[i] = xmalloc(sizeof(EleMsg));
+		//Note: remember to init
+		ele_msg__init(msg.a[i]);
+		msg.a[i]->value = argv[i];
 	}
 
-	len = repeated_msg_proto__get_packed_size(&msg);
+	len = comp_msg__get_packed_size(&msg);
 
 	buf = xmalloc(len);
-	repeated_msg_proto__pack(&msg, buf);
+	comp_msg__pack(&msg, buf);
 
 	fprintf(stderr, "Writing %d serialized bytes\n", len); // See the length of message
 
@@ -39,7 +42,10 @@ void pack_to_file(int argc, int argv[])
 	fwrite(buf, len, 1, fp);
 	fclose(fp);
 
-	xfree(msg.c);
+	for (i = 0; i < argc; i++) {
+		xfree(msg.a[i]);
+	}
+	xfree(msg.a);
 	xfree(buf); // Free the allocated serialized buffer
 }
 
@@ -48,7 +54,7 @@ void unpack_from_file()
 	FILE *fp = NULL;
 	char buf[MAX_LEN];
 	int sum, total, i;
-	RepeatedMsgProto *msg = NULL;
+	CompMsg *msg = NULL;
 
 	if (NULL == (fp = fopen(FILE_NAME, "r"))) {
 		fprintf(stderr, "fopen failed");
@@ -64,17 +70,17 @@ void unpack_from_file()
 		}
 	}
 
-	if (NULL == (msg = repeated_msg_proto__unpack(NULL, total, buf))) {
-		fprintf(stderr, "repeated_msg_proto__unpack failed");
+	if (NULL == (msg = comp_msg__unpack(NULL, total, buf))) {
+		fprintf(stderr, "comp_msg__unpack failed");
 		exit(1);
 	}
 
-	printf("msg->n_c = %d\n", msg->n_c);
-	for (i = 0; i < msg->n_c; i++) {
-		printf("msg->c[%d] = %d\n", i, msg->c[i]);
+	printf("msg->n_a = %d\n", msg->n_a);
+	for (i = 0; i < msg->n_a; i++) {
+		printf("msg->a[%d]->value = %d\n", i, msg->a[i]->value);
 	}
 
-	repeated_msg_proto__free_unpacked(msg, NULL);
+	comp_msg__free_unpacked(msg, NULL);
 
 	fclose(fp);
 }

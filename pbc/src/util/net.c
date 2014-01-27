@@ -1,6 +1,6 @@
 #include <unistd.h>
 #include <string.h>
-#include "utils.h"
+#include "net.h"
 
 // 2-byte number
 short short_endian_swap(short i) {
@@ -65,13 +65,13 @@ int read_all(int socket_id, char* buffer, int size) {
     int retval;
 
     if (size < 0) {
-        opal_output(0, "size is <= 0, please check.\n");
+        fprintf(stderr, "size is <= 0, please check.\n");
         return -1;
     }
 
     // we will not do anything for null buffer
     if (!buffer) {
-        opal_output(0, "buffer is null, please check.\n");
+        fprintf(stderr, "buffer is null, please check.\n");
         return -1;
     }
 
@@ -80,7 +80,7 @@ int read_all(int socket_id, char* buffer, int size) {
         if (retval >= 0){
             bytes_read += retval;
         } else {
-            opal_output(0, "error in reading data.\n");
+            fprintf(stderr, "error in reading data.\n");
             return -1;
         }
     }
@@ -96,13 +96,13 @@ int write_all(int socket_id, const char* buffer, int size) {
     int retval;
 
     if (size < 0) {
-        opal_output(0, "size is <= 0, please check.\n");
+        fprintf(stderr, "size is <= 0, please check.\n");
         return -1;
     }
 
     // we will not do anything for null buffer
     if (!buffer) {
-        opal_output(0, "buffer is null, will return.\n");
+        fprintf(stderr, "buffer is null, will return.\n");
         return 0;
     }
 
@@ -111,7 +111,7 @@ int write_all(int socket_id, const char* buffer, int size) {
         if (retval >= 0){
             bytes_written += retval;
         } else {
-            opal_output(0, "error in writting data.\n");
+            fprintf(stderr, "error in writting data.\n");
             return -1;
         }
     }
@@ -123,7 +123,7 @@ char* get_local_hostname() {
     char* host = (char*)malloc(1024);
     host[1023] = '\0';
     gethostname(host, 1023);
-    opal_output(0, "get host name: %s.\n", host);
+    fprintf(stderr, "get host name: %s.\n", host);
     return host;
 }
 

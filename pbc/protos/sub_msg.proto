@@ -1,0 +1,10 @@
+message SubMsg
+{
+    required int32 value=1;
+}
+
+message CompositeMsg
+{
+    required SubMsg a=1;
+    optional SubMsg b=2;
+}

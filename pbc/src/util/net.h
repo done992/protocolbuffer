@@ -11,7 +11,6 @@
 #include <netinet/in.h>
 #include <netdb.h>
 
-#include "opal/util/output.h"
 
 // 2-byte number
 short short_endian_swap(short i);
