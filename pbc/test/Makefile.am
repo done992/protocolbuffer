@@ -6,7 +6,8 @@ AUTOMAKE_OPTIONS = subdir-objects
 		
 
 bin_PROGRAMS = \
-	amessage_run
+	amessage_run \
+	repeated_run
 
-amessage_run_SOURCES = \
-    	amessage.c
+amessage_run_SOURCES = amessage.c
+repeated_run_SOURCES = repeated.c

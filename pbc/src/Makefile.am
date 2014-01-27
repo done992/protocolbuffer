@@ -4,23 +4,35 @@ AUTOMAKE_OPTIONS = subdir-objects
 
 lib_LTLIBRARIES = libprotoc-eg.la
 
-headers = 
+generate_headers = \
+	generated-sources/amessage.pb-c.h \
+	generated-sources/repeated_msg.pb-c.h
+	
+generate_sources = \
+	generated-sources/amessage.pb-c.c \
+	generated-sources/repeated_msg.pb-c.c 
 
+util_headers = \
+	util/argv.h \
+	util/common.h \
+	util/constants.h \
+	util/log.h \
+	util/net.h \
+	util/str.h \
+	util/xmalloc.h 
+	
+util_sources = \
+	util/argv.c \
+	util/log.c \
+	util/net.c \
+	util/str.c \
+	util/xmalloc.c
+
+headers = \
+	$(generate_headers) \
+	$(util_headers)
 
 libprotoc_eg_la_SOURCES = \
-	$(headers) 	
-
-# add pb generated sources	
-libprotoc_eg_la_SOURCES += \
-	generated-sources/amessage.pb-c.c
-	
-	
-
-#noinst_PROGRAMS = \
-#	sandboxtest
-#
-#sandboxtest_SOURCES = \
-#    test/sandboxtest.c
-#
-#sandboxtest_LDADD = -lyarn
-#sandboxtest_LDFLAGS = -lprotobuf-c
+	$(headers) 	\
+	$(generate_sources) \
+	$(util_sources)

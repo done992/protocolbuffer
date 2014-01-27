@@ -1,0 +1,4 @@
+message RepeatedMsgProto
+{
+    repeated int32 c=1;
+}
