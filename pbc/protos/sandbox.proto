@@ -1,0 +1,19 @@
+option java_package = "org.apache.hadoop.yarn.proto";
+option java_outer_classname = "SandboxProtocol";
+option java_generic_services = true;
+option java_generate_equals_and_hash = true;
+
+message RequestProto {
+  optional int32 value = 1;
+}
+
+message ResponseProto {
+  optional int32 value = 1;
+}
+
+/**
+ * A protobuf service for test
+ */
+service SandboxProtocolService {
+  rpc ping(RequestProto) returns (ResponseProto);
+}
