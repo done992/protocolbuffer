@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/185/trunk/protobuf-rpc-pro-demo/bin
+END
+RunExample.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/59/trunk/protobuf-rpc-pro-demo/bin/RunExample.cmd
+END
+pingpong.proto
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/185/trunk/protobuf-rpc-pro-demo/bin/pingpong.proto
+END
+RunExample.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/59/trunk/protobuf-rpc-pro-demo/bin/RunExample.sh
+END
+make-protos.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/16/trunk/protobuf-rpc-pro-demo/bin/make-protos.sh
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/66/trunk/protobuf-rpc-pro-demo/bin/README.txt
+END

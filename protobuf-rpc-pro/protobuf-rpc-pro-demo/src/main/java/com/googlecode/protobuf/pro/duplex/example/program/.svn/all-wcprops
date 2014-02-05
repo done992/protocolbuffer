@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/program
+END
+ShortTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/program/ShortTests.java
+END
+ClientPerformanceTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/program/ClientPerformanceTests.java
+END
+AllClientTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/program/AllClientTests.java
+END

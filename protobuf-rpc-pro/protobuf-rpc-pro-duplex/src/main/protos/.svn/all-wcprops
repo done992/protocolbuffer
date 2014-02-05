@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/111/trunk/protobuf-rpc-pro-duplex/src/main/protos
+END
+protobuf-rpc-duplex-log.proto
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/111/trunk/protobuf-rpc-pro-duplex/src/main/protos/protobuf-rpc-duplex-log.proto
+END
+protobuf-rpc-duplex.proto
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/104/trunk/protobuf-rpc-pro-duplex/src/main/protos/protobuf-rpc-duplex.proto
+END
+make-protos.sh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/3/trunk/protobuf-rpc-pro-duplex/src/main/protos/make-protos.sh
+END

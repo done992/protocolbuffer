@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/wire
+END
+ExecutableClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/wire/ExecutableClient.java
+END
+PingPong.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/185/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/wire/PingPong.java
+END
+DemoDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/wire/DemoDescriptor.java
+END
+PercentCompleteCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/wire/PercentCompleteCallback.java
+END
+ExecutableProgram.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/wire/ExecutableProgram.java
+END
+ClientExecutor.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/wire/ClientExecutor.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/execution
+END
+SimpleBlockingPingClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/execution/SimpleBlockingPingClient.java
+END
+CancellingNonBlockingPingClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/execution/CancellingNonBlockingPingClient.java
+END
+SimpleBlockingPongClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/execution/SimpleBlockingPongClient.java
+END
+PipelineModifyingClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/execution/PipelineModifyingClient.java
+END

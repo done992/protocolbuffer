@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/181/trunk/protobuf-rpc-pro-duplex/ssl
+END
+certificateauthority.key
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/32/trunk/protobuf-rpc-pro-duplex/ssl/certificateauthority.key
+END
+client.keystore
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/181/trunk/protobuf-rpc-pro-duplex/ssl/client.keystore
+END
+certificateauthority.crt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/66/trunk/protobuf-rpc-pro-duplex/ssl/certificateauthority.crt
+END
+certificateauthority.key.original
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/32/trunk/protobuf-rpc-pro-duplex/ssl/certificateauthority.key.original
+END
+server.csr
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/181/trunk/protobuf-rpc-pro-duplex/ssl/server.csr
+END
+server.key
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/181/trunk/protobuf-rpc-pro-duplex/ssl/server.key
+END
+server.crt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/181/trunk/protobuf-rpc-pro-duplex/ssl/server.crt
+END
+truststore
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/181/trunk/protobuf-rpc-pro-duplex/ssl/truststore
+END
+server.key.original
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/181/trunk/protobuf-rpc-pro-duplex/ssl/server.key.original
+END
+client.csr
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/181/trunk/protobuf-rpc-pro-duplex/ssl/client.csr
+END
+client.crt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/181/trunk/protobuf-rpc-pro-duplex/ssl/client.crt
+END
+client.key
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/181/trunk/protobuf-rpc-pro-duplex/ssl/client.key
+END
+server.crt.der
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/181/trunk/protobuf-rpc-pro-duplex/ssl/server.crt.der
+END
+server.key.der
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/181/trunk/protobuf-rpc-pro-duplex/ssl/server.key.der
+END
+client.key.original
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/181/trunk/protobuf-rpc-pro-duplex/ssl/client.key.original
+END
+server.keystore
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/181/trunk/protobuf-rpc-pro-duplex/ssl/server.keystore
+END
+RunKeyTool.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/181/trunk/protobuf-rpc-pro-duplex/ssl/RunKeyTool.cmd
+END
+client.key.der
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/181/trunk/protobuf-rpc-pro-duplex/ssl/client.key.der
+END
+client.crt.der
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/181/trunk/protobuf-rpc-pro-duplex/ssl/client.crt.der
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex
+END
+RpcClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/RpcClient.java
+END
+RpcConnectionEventNotifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/RpcConnectionEventNotifier.java
+END
+PeerInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/PeerInfo.java
+END
+ClientRpcController.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/ClientRpcController.java
+END
+LocalCallVariableHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/LocalCallVariableHolder.java
+END
+RpcServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/RpcServer.java
+END
+RpcSSLContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/RpcSSLContext.java
+END
+RpcClientChannel.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/RpcClientChannel.java
+END
+CleanShutdownHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/CleanShutdownHandler.java
+END
+RpcServiceRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/RpcServiceRegistry.java
+END

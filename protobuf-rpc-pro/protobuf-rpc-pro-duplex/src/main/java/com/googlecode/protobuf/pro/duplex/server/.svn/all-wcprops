@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/server
+END
+RpcClientRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/server/RpcClientRegistry.java
+END
+DuplexTcpServerPipelineFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/server/DuplexTcpServerPipelineFactory.java
+END

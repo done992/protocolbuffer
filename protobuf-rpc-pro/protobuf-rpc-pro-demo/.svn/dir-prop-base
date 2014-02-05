@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 68
+lib
+.settings
+target
+.classpath
+.project
+protobuf-rpc-pro-demo*.zip
+
+END

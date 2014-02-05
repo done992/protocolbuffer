@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/182/trunk/protobuf-rpc-pro-duplex/src/test/java/com/googlecode/protobuf/pro/duplex/test/ssl
+END
+RpcSSLContextTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/179/trunk/protobuf-rpc-pro-duplex/src/test/java/com/googlecode/protobuf/pro/duplex/test/ssl/RpcSSLContextTest.java
+END
+CertificateValidationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/182/trunk/protobuf-rpc-pro-duplex/src/test/java/com/googlecode/protobuf/pro/duplex/test/ssl/CertificateValidationTest.java
+END

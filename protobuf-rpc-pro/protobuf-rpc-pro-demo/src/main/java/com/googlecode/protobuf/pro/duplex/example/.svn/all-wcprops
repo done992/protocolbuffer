@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example
+END
+DuplexPingPongClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/DuplexPingPongClient.java
+END
+DuplexPingPongServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/DuplexPingPongServer.java
+END
+PingPongServiceFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/PingPongServiceFactory.java
+END

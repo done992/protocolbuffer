@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/util
+END
+RenamingThreadFactoryProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/util/RenamingThreadFactoryProxy.java
+END
+AvailableServerPortFinder.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/104/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/util/AvailableServerPortFinder.java
+END
+ResourceUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/util/ResourceUtils.java
+END
+KeyStoreImportUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/util/KeyStoreImportUtil.java
+END

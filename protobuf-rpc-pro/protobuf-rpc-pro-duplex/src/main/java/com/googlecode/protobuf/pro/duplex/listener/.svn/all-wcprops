@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/listener
+END
+RpcConnectionEventListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/listener/RpcConnectionEventListener.java
+END
+TcpConnectionEventListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-duplex/src/main/java/com/googlecode/protobuf/pro/duplex/listener/TcpConnectionEventListener.java
+END

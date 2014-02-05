@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/nonrpc
+END
+StatusClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/nonrpc/StatusClient.java
+END
+StatusServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/199/trunk/protobuf-rpc-pro-demo/src/main/java/com/googlecode/protobuf/pro/duplex/example/nonrpc/StatusServer.java
+END
