@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<configuration>
+  <property>
+    <name>cn.enjoy.huster.ompi.preinstall</name>
+    <value>true</value>
+    <description>
+      whether Huster has been pre-installed in YARN
+      cluster nodes, value = {true, false}.
+      If true, please set the following configuration
+      {com.greenplum.huster.home}, and the
+      $HAMSTER_HOME will set to
+      {com.greenplum.huster.home} when launching AMs.
+      If false, please set the following configuration
+      {com.greenplum.huster.tarball.path}, with which,
+      the Huster binaries tarball will be uploaded to
+      staging area and set
+      $HAMSTER_HOME to ./ for AM.
+    </description>
+  </property>
+
+  <property>
+    <name>cn.enjoy.huster.ompi.home</name>
+    <value>/Users/caoj7/program/orte</value>
+    <description>
+      the dir path of Huster which has been
+      pre-installed in *YARN NM*. Make sure to set
+      it when {com.greenplum.huster.preinstall}
+      is set to *true*
+    </description>
+  </property>
+
+  <property>
+    <name>cn.enjoy.huster.tarball.path</name>
+    <value>/local-path/of/Huster/tarball</value>
+    <description>
+      the local directory of huster tarball, e.g.,
+      /Users/hadoop/huster2/huster2.tar.gz; make sure
+      to set it when
+      {com.greenplum.huster.preinstall}
+      is set to *false*.
+    </description>
+  </property>
+
+  <property>
+    <name>cn.enjoy.huster.enabled.logkeys</name>
+    <value></value>
+    <description>
+      which log file will be show to user after a job
+      is finished, split by "," e.g. "stdout",
+      "stdout,stderr", "stderr,syslog". If you leave
+      it blank, we will use default strategy
+      print
+      log out.
+    </description>
+  </property>
+
+  <property>
+    <name>cn.enjoy.huster.hdfs.dir</name>
+    <value>huster</value>
+    <description>
+      the default dir in HDFS for Huster job to
+      upload files. by default, we will put it in hdfs:user-home/huster
+    </description>
+  </property>
+</configuration>

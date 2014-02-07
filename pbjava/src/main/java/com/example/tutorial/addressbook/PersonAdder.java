@@ -1,4 +1,4 @@
-package com.example.tutorial;
+package com.example.tutorial.addressbook;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -8,8 +8,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
 
-import com.example.tutorial.AddressBookProtos.AddressBook;
-import com.example.tutorial.AddressBookProtos.Person;
+import com.example.tutorial.addressbook.AddressBookProtos.AddressBook;
+import com.example.tutorial.addressbook.AddressBookProtos.Person;
+
+
 
 
 public class PersonAdder {
