@@ -165,6 +165,9 @@ public class SimpleClient {
 				try {
 					Pong pong = blockingService.ping(controller, ping);
 					
+					log.info("====================pong.getSequenceNo() = " + pong.getSequenceNo());
+					
+					
 					Integer ext = pong.getExtension(ExtendedPong.extendedIntField);
 					if ( ext == null || ext != 111) {
 						log.warn("Extension not parsed. Value=", ext);

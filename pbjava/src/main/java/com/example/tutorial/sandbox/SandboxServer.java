@@ -40,8 +40,6 @@ public class SandboxServer {
     logger.setLogRequestProto(false);
     logger.setLogResponseProto(false);
     
-    
-
     // Configure the server.
     DuplexTcpServerPipelineFactory serverFactory = new DuplexTcpServerPipelineFactory(serverInfo);
     

@@ -31,25 +31,25 @@ public class SandboxServiceFactory {
     }
   }
   
-  public static class NonBlockingSandboxService implements SandboxProtocolService.Interface {
-    @Override
-    public void ping(RpcController controller, RequestProto request,
-        RpcCallback<ResponseProto> done) {
-      if (controller.isCanceled()) {
-        return;
-      }
-      
-      int value = -1;
-      if (request.hasValue()) {
-        value = request.getValue();
-      }
-      
-      ResponseProto.Builder  builder = ResponseProto.newBuilder();
-      builder.setValue(value+1);
-      ResponseProto responseProto = builder.build();
-      
-      done.run(responseProto);
-    }
-  }
+//  public static class NonBlockingSandboxService implements SandboxProtocolService.Interface {
+//    @Override
+//    public void ping(RpcController controller, RequestProto request,
+//        RpcCallback<ResponseProto> done) {
+//      if (controller.isCanceled()) {
+//        return;
+//      }
+//      
+//      int value = -1;
+//      if (request.hasValue()) {
+//        value = request.getValue();
+//      }
+//      
+//      ResponseProto.Builder  builder = ResponseProto.newBuilder();
+//      builder.setValue(value+1);
+//      ResponseProto responseProto = builder.build();
+//      
+//      done.run(responseProto);
+//    }
+//  }
 
 }
