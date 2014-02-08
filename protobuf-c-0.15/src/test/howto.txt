@@ -1,0 +1,30 @@
+[caoj7@cncqcaoj7mbp1 test]$./example-server --unix=socket --database=example.database
+[caoj7@cncqcaoj7mbp1 test]$ ./example-client --unix=socket
+Connecting... done.
+>> dave 
+dave
+ 666
+ who@cares.com
+ MOBILE (123)123-1234
+>> chunxiao
+chunxiao
+ 668
+ chunxiao@gmail.com
+ MOBILE 13999999999
+
+
+
+-------------------------------------------------------------
+[caoj7@cncqcaoj7mbp1 test]$./example-server --port=3333 --database=example.database 
+[caoj7@cncqcaoj7mbp1 test]$./example-client --tcp=127.0.0.1:3333
+Connecting... done.
+>> dave
+dave
+ 666
+ who@cares.com
+ MOBILE (123)123-1234
+>> chunxiao
+chunxiao
+ 668
+ chunxiao@gmail.com
+ MOBILE 13999999999
