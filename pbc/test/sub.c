@@ -54,6 +54,14 @@ void pack_to_file(int argc, int argv[])
 void unpack_from_file()
 {
 	FILE *fp = NULL;
+	/*
+	 * if you don't want use 'char buf[MAX_LEN]'; you can
+	 * 1) got the file's length  (just like you got a-int-length from network)
+	 * 2) xmalloc a buffer
+	 * 3) read the file to this buffer
+	 * 4) Note: remember to free the dynamic buffer
+	 */
+
 	char buf[MAX_LEN];
 	int sum, total, i;
 	CompositeMsg *msg = NULL;

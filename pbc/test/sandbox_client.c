@@ -130,5 +130,7 @@ int main(int argc, char**argv) {
 		protobuf_c_dispatch_run(protobuf_c_dispatch_default());
 	}
 
+	protobuf_c_service_destroy (service);
+
 	return 0;
 }

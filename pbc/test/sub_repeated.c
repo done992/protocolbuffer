@@ -22,6 +22,13 @@ void pack_to_file(int argc, int argv[])
 	msg.n_a = argc;
 	msg.a =  xmalloc(sizeof(EleMsg *) * msg.n_a);
 	for (i = 0; i < argc; i++) {
+		/*
+		 * Note:here we allocate the memory and init with 'ele_msg__init'
+		 * rather than using:
+		 *		EleMsg eleMsg = ELE_MSG__INIT;
+		 * This is because eleMsg is local-variable, it allocated within the loop and disappear after the loop
+		 */
+		//allocate for this pointer
 		msg.a[i] = xmalloc(sizeof(EleMsg));
 		//Note: remember to init
 		ele_msg__init(msg.a[i]);
