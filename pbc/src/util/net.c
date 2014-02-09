@@ -119,13 +119,7 @@ int write_all(int socket_id, const char* buffer, int size) {
     return 0;
 }
 
-char* get_local_hostname() {
-    char* host = (char*)malloc(1024);
-    host[1023] = '\0';
-    gethostname(host, 1023);
-    fprintf(stderr, "get host name: %s.\n", host);
-    return host;
-}
+
 
 // read protbuf-style varint-int from socket
 int read_raw_varint32(int socket_id, int* readlen, int* value) {
@@ -187,5 +181,42 @@ int read_raw_varint32(int socket_id, int* readlen, int* value) {
         }
     }
     *value = result;
+    return 0;
+}
+
+char* get_local_hostname() {
+    char* host = (char*)malloc(1024);
+    host[1023] = '\0';
+    gethostname(host, 1023);
+    fprintf(stderr, "get host name: %s.\n", host);
+    return host;
+}
+
+/* connect_to_server, return 0 if succeed */
+extern int connect_to_server(int socket_id, const char* host, int port)
+{
+    //define socket variables
+    struct sockaddr_in serv_addr;
+    struct hostent *server;
+
+    //init port / socket / server
+    server = gethostbyname(host);
+    if (server == NULL) {
+    	fprintf(stderr, "ERROR, no such host.\n");
+        return -1;
+    }
+    bzero((char *) &serv_addr, sizeof(serv_addr));
+    serv_addr.sin_family = AF_INET;
+    bcopy((char *)server->h_addr,
+          (char *)&serv_addr.sin_addr.s_addr,
+                server->h_length);
+                serv_addr.sin_port = htons(port);
+
+    //connect via socket
+    if (connect(socket_id, &serv_addr, sizeof(serv_addr)) < 0) {
+    	fprintf(stderr, "ERROR connecting.\n");
+        return -1;
+    }
+
     return 0;
 }

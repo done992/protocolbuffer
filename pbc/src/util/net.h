@@ -46,9 +46,13 @@ int write_all(int socket_id, const char* buffer, int size);
  */ 
 int read_all(int socket_id, char* buffer, int size);
 
+
+
 /* get local hostname, return hostname if succeed, otherwise, return NULL
  * must free the value when you no longer use it.
  */
-char* get_local_hostname();
+extern char* get_local_hostname();
+
+extern int connect_to_server(int socket_id, const char* host, int port);
 
 #endif // _HD_CLIENT_NET_UTILS_H

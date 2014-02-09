@@ -24,6 +24,7 @@ util_headers = \
 	util/constants.h \
 	util/log.h \
 	util/net.h \
+	util/rpc.h \
 	util/str.h \
 	util/xmalloc.h 
 	
@@ -31,6 +32,7 @@ util_sources = \
 	util/argv.c \
 	util/log.c \
 	util/net.c \
+	util/rpc.c \
 	util/str.c \
 	util/xmalloc.c
 
