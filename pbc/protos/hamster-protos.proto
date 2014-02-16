@@ -1,0 +1,131 @@
+option java_package = "org.apache.hadoop.yarn.proto";
+option java_outer_classname = "JobMasterProtocol";
+option java_generic_services = true;
+option java_generate_equals_and_hash = true;
+
+/* definitions for records */
+
+message JobIdProto {
+  required int64 timestamp = 1;
+  required int32 id = 2;
+}
+
+message ResourceIdProto {
+  required int32 id = 1;
+}
+
+message AllocatedResourceProto {
+  required string hostname = 1;
+  required ResourceIdProto resourceId = 2;
+}
+
+enum AllocationStatusProto {
+  A_ALLOCATING = 1;
+  A_ALLOCATION_SUCCEEDED = 2;
+  A_ALLOCATION_FAILED = 3;
+}
+
+message MpiJobAllocationUpdateProto {
+  required string mpiJobName = 1;
+  repeated AllocatedResourceProto newlyAllocatedResources = 2;
+  required AllocationStatusProto allocationStatus = 3;
+}
+
+message StringStringMapProto {
+  optional string key = 1;
+  optional string value = 2;
+}
+
+message LocalResourceProto {
+  required string url = 1;
+  required string localizedName = 2;
+  required int64 size = 3;
+  required int64 timestamp = 4;
+}
+
+message ResourceLaunchContextProto {
+  required ResourceIdProto resourceId = 1;
+  optional string commandline = 2;
+  repeated StringStringMapProto envs = 3;
+  repeated LocalResourceProto localResources = 4;
+  optional string mpiDaemonCommandline = 5;
+  repeated StringStringMapProto mpiDaemonEnvs = 6;
+  optional int32 localPeers = 7;
+}
+
+/* definitions for service types */
+
+message CreateJobRequestProto {
+  required string user = 1;
+}
+
+message CreateJobResponseProto {
+  required JobIdProto jobId = 1;
+}
+
+message HeartbeatRequestProto {
+  required JobIdProto jobId = 1;
+}
+
+message HeartbeatResponseProto {
+  repeated MpiJobAllocationUpdateProto updates = 1;
+}
+
+enum FinalJobStatusProto {
+  JOB_SUCCEEDED = 1;
+  JOB_FAILED = 2;
+  JOB_UNKOWN = 3;
+}
+
+message FinishJobRequestProto {
+  required JobIdProto jobId = 1;
+  required FinalJobStatusProto finalJobStatus = 2;
+  optional string diagnosticMessage = 3;
+}
+
+message FinishJobResponseProto {
+}
+
+message AllocateRequestProto {
+  required string mpiJobName = 1;
+  optional int32 memoryInMB = 2;
+  optional int32 vCores = 3;
+  optional string policy = 4;
+  required int32 np = 5;
+  optional int32 maxProPerNode = 6;
+  optional int32 minProcPerNode = 7;
+  optional int64 timeoutInMs = 8;
+  required JobIdProto jobId = 9;
+}
+
+message AllocateResponseProto {
+}
+
+message LaunchRequestProto {
+  required JobIdProto jobId = 1;
+  required string mpiJobName = 2;
+  repeated ResourceLaunchContextProto resourceLaunchContexts = 3;
+}
+
+message LaunchResponseProto {
+
+}
+
+message TerminateRequestProto {
+  required JobIdProto jobId = 1;
+  required string mpiJobName = 2;
+} 
+
+message TerminateResponseProto {
+}
+
+/* definitions for rpc */
+
+service JobMasterProtocolService {
+  rpc createJob(CreateJobRequestProto) returns (CreateJobResponseProto);
+  rpc heartbeat(HeartbeatRequestProto) returns (HeartbeatResponseProto);
+  rpc finishJob(FinishJobRequestProto) returns (FinishJobResponseProto);
+  rpc allocate(AllocateRequestProto) returns (AllocateResponseProto);
+  rpc launch(LaunchRequestProto) returns (LaunchResponseProto);  
+  rpc terminate(TerminateRequestProto) returns (TerminateResponseProto);
+}
